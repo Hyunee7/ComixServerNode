@@ -32,7 +32,8 @@ module.exports = {
                   '.PDF', '.INI', '.CAB',
                   '.DAT', '.DAT', '.BIN',
                   '.DLL', '.INX', '.HDR',
-                  '.EX_', '.INF', '.DIZ'],
-  hideList     : ['Thumbs.db']               // 파일/디렉토리 목록에서 숨길항목(전체 매치)
+                  '.EX_', '.INF', '.DIZ',
+                  '.URL'],
+  hideList     : ['Thumbs.db', '__MACOSX']               // 파일/디렉토리 목록에서 숨길항목(전체 매치)
 }
 

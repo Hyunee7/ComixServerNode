@@ -102,7 +102,8 @@ Date.prototype.getDTTM2 = function(){ // 로그용 YYYY-MM-DD HH:Mi:SS.sss 형�
 String.prototype.isPass = function (){ // 제외단어 처리
     var r = false;
     for(var i=0; i<passName.length; i++){
-        if(this.toUpperCase().indexOf(passName[i])>=0){
+//        if(this.toUpperCase().indexOf(passName[i])>=0){
+        if(require('path').extname(this.toUpperCase()) == passName[i]){
             r=true;
             break;
         }
